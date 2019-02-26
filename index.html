@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script type="text/javascript">
+
+        // 27
+        function people(name, age) {
+            this.name = name;
+            this.age = age;
+            this.yearsUntilRetire = yearsLeft;
+        }
+        function yearsLeft() {
+            var numYears = 65 - this.age;
+            return numYears;
+        }
+        var natalie = new people("Natalie Portman", 28);
+        var Bucky = new people("Bucky Roberts", 24);
+
+        // 26
+        Hyodae2 = {name:"Hyodae Kim", age:24};
+        Taylor2 = {name:"Taylor Swift", age:20};
+
+        // 25
+        function person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        var Hyodae = new person("Hyodae Kim", 24);
+        var Taylor = new person("Taylor Swift", 20);
+    </script>
+
 </head>
 <body>
 
+
+
+<!-- 28 - Arrays -->
+<h3>Lecture28 - Arrays</h3><br>
+
+<script type="text/javascript">
+    var people = new Array("Bucky", "Tommy", "Sarah", "Hanah", "Miky");
+    document.write(people[0] + " and " + people[3]);
+</script>
+
+<br><br><hr><br>
+
+<!-- 27 - Adding Methods to Our Objects -->
+<h3>Lecture27 - Adding Methods to Our Objects</h3><br>
+
+<script type="text/javascript">
+    document.write(natalie.yearsUntilRetire() +"<br>");
+    document.write(Bucky.yearsUntilRetire() +"<br>");
+
+</script>
+
+<br><br><hr><br>
+
+
+
+<!-- 26 - Object Initializers -->
+<h3>Lecture26 - Object Initializers</h3><br>
+
+<script type="text/javascript">
+    document.write(Hyodae2.name + " loves " + Taylor2.name +
+        " because she is " + Taylor2.age);
+
+</script>
+
+<br><br><hr><br>
+
+<!-- 25 - Creating Our Own Objects -->
+    <h3>Lecture25 - Creating Our Own Objects</h3><br>
+
+<script type="text/javascript">
+    document.write(Hyodae.name + "<br>");
+    document.write(Taylor.age);
+
+</script>
+
+    <br><br><hr><br>
+
+<!-- 24 - Objects -->
+    <h3>Lecture24 - Objects</h3><br>
+
+<script type="text/javascript">
+    var tuna = "hey i am a tuna fish! ";
+    document.write(tuna.length + "<br>");
+
+    document.write("hey now brown cow");
+
+</script>
+
+    <br><br><hr><br>
 
 <!-- 23 - onMouseOver & onLoad -->
     <h3>Lecture23 - onMouseOver & onLoad</h3><br>
