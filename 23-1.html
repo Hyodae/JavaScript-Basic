@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onUnload="alert('goodbye');">
+
+yaha ayaha .... yes. unload....
+
+<script>
+    window.onbeforeunload = function() {
+        return "Hey unload.... good bye"
+    };
+</script>
+
+</body>
+</html>

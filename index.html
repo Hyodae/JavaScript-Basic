@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!-- 23 - onMouseOver & onLoad -->
+    <h3>Lecture23 - onMouseOver & onLoad</h3><br>
+
+    <a href="http://www.daum.net" onMouseOver="alert('gametime!');">Daum: Hover over me!</a> <br>
+    <a href="http://www.daum.net" onMouseOut="alert('hey come back!');">Daum: Hover over me!</a>
+
+    <br><br><hr><br>
+
+<!-- 22 - Event Handlers -->
+<script type="text/javascript">
+    document.write("Lecture22 - Event Handlers <br>");
+</script>
+
+<form action="">
+    <input type="button" value="touch me" onclick="
+        alert('ahh!');
+        alert('two times!');"
+    >
+</form>
+
+<br><br><hr><br>
+
+<!-- 21 - do while -->
+<script type="text/javascript">
+    document.write("Lecture21 - do while <br>");
+
+    var x = 30;
+
+    do {
+        document.write("do while loop " + x + "<br>");
+        x += 2;
+    } while (x<=10);
+
+</script>
+<br><br><hr><br>
+
+<!-- 20 - while Loop -->
+<script type="text/javascript">
+    document.write("Lecture20 - while Loop <br>");
+
+    var x = 1;
+
+    while (x<10){
+        document.write("while loop " + x + "<br>");
+        x++;
+    }
+
+</script>
+<br><br><hr><br>
+
+<!-- 19 - for Loop -->
+<script type="text/javascript">
+    document.write("Lecture19 - for Loop <br>");
+
+    for(x=0; x<10; x++){
+        document.write("loop " + x + "<br>");
+    }
+
+</script>
+<br><br><hr><br>
+
+<!-- 18 - switch -->
+<script type="text/javascript">
+    document.write("Lecture18 - switch <br>");
+
+    var girl = "emily";
+
+    switch(girl) {
+        case "natalie":
+            document.write("Yes! You must like garden state! <br>");
+            break;
+        case "ashley":
+            document.write("oo fan of twilight ey? <br>");
+            break;
+        case "vicky":
+            document.write("haha vicky, right? <br>");
+            break;
+        default:
+            document.write("No~ nobody? default<br>");
+    }
+
+</script>
+<br><br><hr><br>
+
+<!-- 17 - Complex Conditions -->
+<script type="text/javascript">
+    document.write("Lecture17 - Complex Conditions <br>");
+
+    var firstName="Hyodae";
+    var lastName="Kim";
+
+    if((firstName=="Hyodae") && (lastName=="Kim")){
+        document.write("Welcome Hyodae Kim!!<br>");
+    }
+
+    if((firstName=="Hyodae") || (lastName=="Park")){
+        document.write("Great<br>");
+    }
+
+</script>
+<br><br><hr><br>
+
+
+<!-- 16 - Nesting and Fridays! -->
+<script type="text/javascript">
+    document.write("Lecture16 - Nesting and Fridays! <br>");
+
+    var firstName="Hyodae";
+    var lastName="Kim";
+
+    if(firstName=="Hyodae"){
+        if(lastName=="Kim"){
+            document.write("Welcome Hyodae Kim!!");
+        }
+        else {
+            document.write("Welcome Hyodae someone !!!")
+        }
+    }
+
+</script>
+<br><br><hr><br>
+
+
+<!-- 15 - if/else Statement -->
+<script type="text/javascript">
+    document.write("Lecture15 - if/else Statement <br>");
+
+    var apples = 34;
+    var hotdogs = 97;
+
+    if(apples==hotdogs) {
+        document.write("Yay it worked!");
+    }
+    else {
+        document.write("No. it's different.");
+    }
+
+</script>
+<br><br><hr><br>
+
+<!-- 14 - if Statement -->
+<script type="text/javascript">
+    document.write("Lecture14 - if Statement <br>");
+
+    var apples = 34;
+    var hotdogs = 97;
+
+    if(apples!=hotdogs) {
+        document.write("Yay it worked!");
+    }
+
+</script>
+<br><br><hr><br>
+
+<!-- 13 - Assignment Operators -->
+<script type="text/javascript">
+    document.write("Lecture13 - Assignment Operators <br>");
+
+    var Hyodae = 24;
+    Hyodae += 55;
+    Hyodae -= 99;
+    Hyodae *= 11;
+    Hyodae /= 5;
+    document.write(Hyodae);
+
+</script>
+<br><br><hr><br>
+
+<!-- 12 - Math Operators -->
+<script type="text/javascript">
+    document.write("Lecture12 - Math Operators <br>");
+
+    var apples = 5 + 76 + 3434;
+    document.write(apples + "<br>");
+
+    apples = 54 * 3;
+    document.write(apples + "<br>");
+
+    apples = 55 / 3;
+    document.write(apples + "<br>");
+
+    apples = 55 % 3;
+    document.write(apples + "<br>");
+
+    var chop = 77;
+    chop++;
+    document.write(chop + "<br>");
+    chop--;
+    document.write(chop + "<br>");
+
+</script>
+<br><br><hr><br>
+
+<!-- 11 - Global & Local Variables -->
+<script type="text/javascript">
+    document.write("Lecture11 - Global & Local Variables <br>");
+
+    var girl = " kelsey ";  // global variable
+    function spit() {
+        document.write(girl);
+    }
+    spit();
+
+    document.write(girl);
+
+    function localspit() {
+        var girl = " jessy ";   // local variable
+        document.write(girl);
+    }
+
+    localspit();
+
+</script>
+<br><br><hr><br>
+
+
+<!-- 10 - Calling a Function From Another Function -->
+<script type="text/javascript">
+    document.write("Lecture10 - Calling a Function From Another Function <br>");
+
+    function doFirst() {
+        document.write("I am first bro! <br>");
+    }
+    function doSecond() {
+        document.write("I am 222222!!!!");
+    }
+
+    function start() {
+        doFirst();
+        doSecond();
+    }
+
+    start();
+
+</script>
+<br><br><hr><br>
+
+<!-- 9 - The return Statement -->
+<script type="text/javascript">
+    document.write("Lecture09 - The return Statement. <br>");
+
+    function tooeasy() {
+        return "gametime";
+    }
+    document.write(tooeasy() + "<br>");
+
+    function addNumbers(a,b) {
+        var c = a + b;
+        return c;
+    }
+    document.write(addNumbers(3,6));
+
+</script>
+<br><br><hr><br>
+
+<!-- 8. Functions with Multiple Parameters -->
+<script type="text/javascript">
+    document.write("Lecture08. Functions with Multiple Parameters. <br>");
+
+    function apples(one, two) {
+        document.write(one + " is better than " + two + "<br>");
+    }
+
+    apples("Hyodae", "Hobart");
+    apples("counting crows", "beiber");
+    apples("strawberry", "coconut");
+
+</script>
+
+<br><br><hr><br>
+
+<!-- 7. Using Parameters with Functions -->
+<script type="text/javascript">
+    document.write("Lecture07. Using Parameters with Functions. <br>");
+
+    function meatball(x) {
+        alert("I love " + x);
+    }
+
+    //meatball("bacon");
+    //meatball("natalie portman");
+    //meatball("Good will hunting");
+</script>
+
+<br><br><hr><br>
+
+<!-- 6. Functions -->
+<script type="text/javascript">
+    document.write("Lecture06. Functions. ");
+
+    function funky() {
+        alert("Ouch!!!")
+    }
+
+</script>
+
+<form action="">
+    <input type="button" value="touch me" onclick="funky()">
+</form>
+
+<br><br><hr><br>
+
+
+<!-- 5. Using Variables with Strings -->
+<script type="text/javascript">
+    document.write("Lecture05. Using Variables with Strings. <br>");
+
+    var name = "Hyodae";
+    var age = 24;
+
+    document.write(name + " is my name and my age is " + age)
+
+    var tuna = "I am a fish";
+    var bacon = "baconator?";
+    var ham = "hamburglarr";
+    document.write(tuna+bacon+ham);
+
+</script>
+
+<br><br><hr><br>
+
+<!-- 4. Different Types of Variables -->
+<script type="text/javascript">
+    document.write("Lecture04. Different Types of Variables. <br>");
+
+    var tuna = -20.649;
+    document.write(tuna);
+
+    var text1 = " text in here.";
+    document.write(text1);
+
+    var text2 = " John said, \"boy do I love Bessie?\"";
+    document.write(text2);
+
+    //var empty = null;
+    //document.write(empty);
+
+</script>
+
+
+<br><br><hr><br>
+
+<!-- 3. Variables -->
+<script type="text/javascript">
+    var x = 23;
+    var X = 32;
+    document.write("Lecture03. Variables.<br> x=" + x + " X=" + X);
+</script>
+
+    <br><br><hr><br>
+
+<!-- 2. Comments and Statements -->
+<script type="text/javascript">
+    // comment goes here.
+    /*
+      This is multi-line comments
+      I want to go buy stuff on ebay.
+     */
+    document.write("Lecture02. Comments and Statements <br>");
+    document.write("and I love this programming");
+</script>
+
+    <br><br><hr><br>
+
+<!-- 1. Introduction to JavaScript -->
+<script type="text/javascript">
+    document.write("Lecture01. Introduction to Javascript<br>");
+</script>
+
+</body>
+</html>
