@@ -2,7 +2,7 @@
 
 
 
-<h3><strong>14. JavaScript example</strong></h3>
+<h3><strong>JavaScript example</strong></h3>
 
 
 
